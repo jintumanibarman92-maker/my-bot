@@ -10,7 +10,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # This checks for the word 'client' in the link
     if args and args[0].lower() == "client":
-        photo_path = r"c:\Users\hp\Music\photo_6122880209129246050_y.jpg"
+        photo_path = "photo.jpg"
         caption_text = "Niche Wale BUtton Pe Click Karke Channel Join Kro Aur Number Shot Se Paisa Kamao Guyss Click NOWW !!! 👇"
         
         # Client's Specific Button and Link
