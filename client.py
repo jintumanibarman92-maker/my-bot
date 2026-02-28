@@ -31,7 +31,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     # YOUR NEW CLIENT API TOKEN
-    TOKEN = "6834091453:AAETYz-uUfCk33TthWfX-ftN79mRfL_ylmY"
+    TOKEN = "6834091453:AAEU6j2n59MnvWfOQQK9HgfF14ERccJoorM"
     
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
