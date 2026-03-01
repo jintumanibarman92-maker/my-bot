@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     app = ApplicationBuilder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", client))
-app.add_handler(CommandHandler("client", client))
+    app.add_handler(CommandHandler("client", client))
     
     print("Client Bot is starting... No errors!")
     app.run_polling()
