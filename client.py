@@ -1,4 +1,4 @@
-Import logging
+import logging
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
@@ -11,7 +11,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     # We use ** to make text BOLD
     caption_text = (
-        "**Niche Wale Button Pe Click Karke Channel Join Kro Aur Number Shot Se Paisa Kamao Guyss Click Noww !!!** 👇"
+        "**Niche Wale Button Pe Click Karke Channel Join Kro Aur Number Shot Se Paisa Kamao Guyss Click Noww !!!** 👇🚀💰"
     )
     
     # Button with Emoji
@@ -24,22 +24,22 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 photo=photo_file,
                 caption=caption_text,
                 reply_markup=reply_markup,
-                parse_mode='Markdown'  # This line is what makes the BOLD work!
+                parse_mode='Markdown'
             )
     except Exception as e:
         # If photo fails, send text with emojis and bold
         await update.message.reply_text(
-            f"**Welcome! Please join here:** https://t.me/+QKLXn92Z_sY1Yjk1 ",
+            f"**Welcome! Please join here:** https://t.me/+QKLXn92Z_sY1Yjk1 🚀💰",
             parse_mode='Markdown'
         )
 
 if __name__ == '__main__':
-    # REPLACE THE TOKEN BELOW WITH YOUR ACTUAL BOT TOKEN
-    app = ApplicationBuilder().token("YOUR_BOT_TOKEN_HERE").build()
+    # Your token is already added here
+    app = ApplicationBuilder().token("6834091453:AAEU6j2n59MnvWfOQQK9HgfF14ERccJoorM").build()
 
-    # Handlers for both commands
+    # These lines make BOTH commands work
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("client", start))
 
-    print("Client Bot is starting... No errors!")
+    print("Bot is starting... No errors!")
     app.run_polling()
