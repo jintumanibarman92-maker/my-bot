@@ -15,7 +15,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     )
     
     # Button with Emoji
-    keyboard = [[InlineKeyboardButton("✅ JOIN NOW ✅", url="https://t.me/+QKLXn92Z_sY1Yjk1")]]
+    keyboard = [[InlineKeyboardButton("✅ JOIN NOW ✅", url="https://t.me/+lRsgf2FFf4s0Mzc1")]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     try:
